@@ -140,7 +140,7 @@ export default function Home() {
   /**
    * mintZeroDot618Token: 为给定的地址 mint amount 数量的代币
    */
-  const mintZeroDot618Token = async () => {
+  const mintZeroDot618Token = async (amount) => {
     try {
       // 写操作，需要 signer
       const signer = await getProviderOrSigner(true);
